@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./static/materialize/css/materialize.css">
+    <link href="./static/Jquery/JQueryUI.css" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript" src="./static/materialize/js/materialize.js"></script>
+    <script src="./static/Jquery/jQueryv3.5.1min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./static/home.js"></script>
+    <title>Document</title>
+  
+   
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+     
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down"> 
+        <li>    
+          <div class="center row">
+             <div class="col s12 " >
+               <div class="row" id="topbarsearch">
+                 <div class="input-field col s6 s12 white-text">
+                   <i class="white-text material-icons prefix">search</i>
+                   <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete white-text" onkeyup="searchProduct()" >
+                   </div>
+                 </div>
+               </div>
+             </div>          
+         </li> 
+        <li><a href="home.html">Home</a></li>
+        <li><a href="classinfo.html">About Us</a></li>
+        <li><a href="instructor.html">Instructors</a></li>
+        <li><a href="forms.html">Dance Forms</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li>    
+    <div class="center row">
+       <div class="col s12 " >
+         <div class="row" id="topbarsearch">
+           <div class="input-field col s6 s12 white-text">
+             <i class="black-text material-icons prefix">search</i>
+             <input type="text" placeholder="search" id="autocomplete-input1" class="autocomplete black-text"  onkeyup="searchProduct1()">
+             </div>
+           </div>
+         </div>
+       </div>          
+   </li> 
+  <li><a href="home.html">Home</a></li>
+  <li><a href="classinfo.html">About Us</a></li>
+  <li><a href="instructor.html">Instructors</a></li>
+   <li><a href="forms.html">Dance Forms</a></li>
+  <li><a href="contact.html">Contact US</a></li>
+</ul>
+<script>
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems, {});
+});
+</script>
+
+
+
+      
+
+    <section id="intro">
+        <br><div>Welcome to Dance Academy <br>
+       Eat Sleep Dance Repeat</div>
+    </section> 
+    
+    <section id="mission">
+      <div id="list">
+      <div class="row" >
+        
+        <div class="col m4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./static/1.jpg">
+            </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">DANCE PERFECTION<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">DANCE PEERFECTION<i class="material-icons right">close</i>
+              <p>“Dance first. Think later. It’s the natural order.” </p>
+            </span>
+          </div>
+          </div>
+        </div>
+
+        <div class="col m4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./static/2.jpg">
+            </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">DANCE THE WAY YOU LIKE<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">ANCE THE WAY YOU LIKE<i class="material-icons right">close</i>
+              <p>"Great dancers are not great because of their technique, they are great because of their passion."</p>
+            </span>
+          </div>
+          </div>
+        </div>
+
+        <div class="col m4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./static/3.jpg">
+            </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">NEVER MISS A CHANCE TO DANCE<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">NEVER MISS A CHANCE TO DANCE<i class="material-icons right">close</i>
+              <P>"Dance is art; paint your dream and follow it"</P>
+            </span>
+          </div>
+          </div>
+        </div>
+
+      </div> 
+    </div>
+
+    </section>
+    
+  
+    <footer class="page-footer">
+    
+      <div class="footer-copyright">
+        <div class="container">
+          | Copyright © 2021 DanceAcademy.com | All Rights Reserved 
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

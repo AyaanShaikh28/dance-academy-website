@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;   
+}
+
+body{
+    background-color:wheat;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        background: center / cover no-repeat url('../static/danceback.jpg'); 
+}
+
+.nav-wrapper{
+    background-color: black;
+    border: 2px solid black;
+}
+  .card img{
+    width:300px;
+    height: 300px;
+    
+  }
+  .page-footer {
+  
+    background-color: black;
+    height: 70px;
+    text-align: center;
+    
+  }
+    

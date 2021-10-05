@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="C:/Users/Zeshan/Desktop/Materialize/materialize/css/materialize.css">
+    <link href="C:/Users/Zeshan/Desktop/Materialize/Jquery/JQueryUI.css" rel="Stylesheet" type="text/css" />
+	<script type="text/javascript" src="C:/Users/Zeshan/Desktop/Materialize/materialize/js/materialize.js"></script>
+	<script src="C:/Users/Zeshan/Desktop/Materialize/Jquery/jQueryv3.5.1min.js"></script>
+
+</head>
+<body>
+<div class="row">
+  <div class="input-field col s3">
+<label for="fromDate">Select From Date:</label>
+<input type="text" id="fromDate" class="datepicker">
+</div>
+<div class="input-field col s3">
+ <label for="fromTime">Select a time:</label>
+  <input type="text" id="fromTime" class="timepicker" name="fromTime" value="00:00">
+  </div>
+  <!-- </div> -->
+  <!-- <div class="row"> -->
+  <div class="input-field col s3">
+<label for="toDate">Select To Date:</label>
+<input type="text" id="toDate" class="datepicker">
+</div>
+<div class="input-field col s3">
+ <label for="toTime">Select a time:</label>
+  <input type="text" id="toTime"  class="timepicker"  name="toTime" value="00:00">
+  </div>
+  </div>
+   <!-- <input type="text" class="datepicker" id="datepicker"> -->
+<p>Click the button to get the date of the date field.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo">FromDate</p>
+<p id="demo1">FromTime</p>
+<p id="demo2">UnixTimeStamp</p>
+<p id="demo3">ToDate</p>
+<p id="demo4">ToTime</p>
+<p id="demo5">UnixTimeStamp</p>
+
+
+	
+	<script>
+ document.addEventListener('DOMContentLoaded', function () {
+        var options = {
+            defaultDate: new Date(2020, 1,00),
+            setDefaultDate: true
+        };
+        var elems = document.querySelectorAll('.datepicker');
+        var instance = M.Datepicker.init(elems, options);
+        // instance.open();
+        instance.setDate(new Date(2020,1, 00));
+		$('.datepick').each(function(){
+    $(this).datepicker();
+});
+		  });
+		  
+		  
+</script>
+<script>
+		 const timer = document.querySelectorAll('.timepicker');
+		 M.Timepicker.init(timer,{});
+		  
+</script>
+	
+<script>
+function myFunction() {
+
+
+  var x = document.getElementById("fromDate").value;
+  document.getElementById("demo").innerHTML = x;
+   var y = document.getElementById("fromTime").value;
+  document.getElementById("demo1").innerHTML = y;
+   var z=x.concat(" ").concat(y).concat(".00");
+  <!-- document.getElementById("demo2").innerHTML = z; -->
+  var unixtime = Math.round(new Date(z).getTime()/1000)
+  document.getElementById("demo2").innerHTML = unixtime;
+  
+   var x1 = document.getElementById("toDate").value;
+  document.getElementById("demo3").innerHTML = x1;
+   var y1 = document.getElementById("toTime").value;
+  document.getElementById("demo4").innerHTML = y1;
+  var z1=x1.concat(" ").concat(y1).concat(".00");
+  //document.getElementById("demo5").innerHTML = z;
+  var unixtime1 = Math.round(new Date(z1).getTime()/1000)
+  document.getElementById("demo5").innerHTML = unixtime1;
+  }
+  </script>
+ 
+
+
+
+</body>
+</html>

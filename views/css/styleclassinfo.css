@@ -1,0 +1,53 @@
+.container{
+    border: 2px solid black;
+    
+}
+body{
+    background: center / cover no-repeat url('../static/danceback.jpg'); 
+}
+.info{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+.page-footer {
+  
+    background-color: black;
+    height: 70px;
+    text-align: center;
+    
+  }
+    
+
+
+
+
+  @media only screen and (max-width:300px){
+    .info{
+        font-size: 15px;
+        overflow: hidden;
+  }
+
+ }
+
+@media only screen and (min-width: 300px) and (max-width:500px) {
+    .info{
+        font-size: 20px;
+        overflow: hidden;
+}
+
+}
+@media (min-width: 500px) and (max-width:800px) {
+    .info{
+        font-size: 25px;
+        overflow: hidden;
+        
+}
+}
